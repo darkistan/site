@@ -1,0 +1,22 @@
+# Залежності
+node_modules/
+
+# Збірка
+dist/
+
+# Логи локального сервера
+logs/
+
+# Середовище
+.env
+.env.*
+!.env.example
+
+# IDE / OS
+.DS_Store
+Thumbs.db
+*.log
+debug-*.log
+
+# Cursor / MCP (локальні артефакти)
+.cursor/
