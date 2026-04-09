@@ -50,6 +50,12 @@ export function Header() {
               {t.process}
             </a>
             <a
+              href="#faq"
+              className="text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium"
+            >
+              {t.faq}
+            </a>
+            <a
               href="#contact"
               className="text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium"
             >
@@ -65,6 +71,8 @@ export function Header() {
                 <button
                   key={lang}
                   onClick={() => setLanguage(lang)}
+                  aria-label={`Switch language to ${lang}`}
+                  aria-pressed={language === lang}
                   className={`px-3 py-1.5 rounded-md text-sm font-medium transition-all duration-200 ${
                     language === lang
                       ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white shadow-lg shadow-cyan-500/30"
@@ -122,6 +130,13 @@ export function Header() {
               {t.process}
             </a>
             <a
+              href="#faq"
+              className="block text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {t.faq}
+            </a>
+            <a
               href="#contact"
               className="block text-gray-300 hover:text-cyan-400 transition-colors text-sm font-medium"
               onClick={() => setIsMenuOpen(false)}
@@ -135,6 +150,8 @@ export function Header() {
                 <button
                   key={lang}
                   onClick={() => setLanguage(lang)}
+                  aria-label={`Switch language to ${lang}`}
+                  aria-pressed={language === lang}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                     language === lang
                       ? "bg-gradient-to-r from-cyan-500 to-purple-500 text-white"

@@ -8,6 +8,7 @@ export const translations = {
       benefits: "Переваги",
       process: "Як ми працюємо",
       contacts: "Контакти",
+      faq: "FAQ",
       telegram: "Telegram",
     },
     // Hero Section
@@ -86,7 +87,7 @@ export const translations = {
     // Process Section
     process: {
       badge: "Процес роботи",
-      title: "Seamless Onboarding",
+      title: "Швидкий запуск",
       subtitle: "Прозорий та швидкий процес від першого контакту до постійної підтримки",
       step1: {
         title: "Заявка в Telegram",
@@ -159,6 +160,68 @@ export const translations = {
         accounting: "1С у хмарі",
       },
     },
+    solutionsFit: {
+      title: "Наші рішення підходять, якщо:",
+      items: [
+        "у вас 5–100 співробітників і немає свого IT-відділу",
+        "ви працюєте з 1С / BAS і хочете стабільну роботу",
+        "команда працює віддалено або гібридно",
+        "ІТ часто “падає” або працює нестабільно",
+        "хочете зменшити витрати на сервери та підтримку",
+        "бізнес росте, а інфраструктура не встигає",
+        "потрібен контроль, безпека та резервні копії",
+      ],
+    },
+    faq: {
+      title: "Питання та відповіді",
+      items: [
+        {
+          q: "Скільки коштують ваші послуги?",
+          a: "Вартість залежить від кількості користувачів, серверів і задач.\nМи не продаємо “пакети”, а підбираємо рішення під бізнес.\n\n👉 Напишіть нам у Telegram — підготуємо індивідуальний розрахунок.",
+        },
+        {
+          q: "Чи буде зупинка роботи при міграції в хмару?",
+          a: "У більшості випадків — ні.\nМіграцію плануємо так, щоб бізнес продовжував працювати.\n\nКритичні етапи виконуємо у неробочий час.",
+        },
+        {
+          q: "Скільки часу займає запуск?",
+          a: "У середньому — від 3 до 5 днів.\nТермін залежить від складності інфраструктури та обсягу даних.",
+        },
+        {
+          q: "Чи безпечно переносити дані у хмару?",
+          a: "Так. Ми налаштовуємо:\n\n- шифрування даних\n- контроль доступів\n- резервне копіювання\n\nВаші дані захищені краще, ніж на локальному сервері.",
+        },
+        {
+          q: "Де фізично зберігаються дані?",
+          a: "Залежить від обраного рішення (Європа).\nПідбираємо варіант під вимоги бізнесу та законодавства.",
+        },
+        {
+          q: "Що робити, якщо щось “зламається”?",
+          a: "Ви просто пишете нам — і ми оперативно вирішуємо проблему.\n\nТакож:\n\n- працює моніторинг\n- багато проблем вирішуються ще до того, як ви їх помітите",
+        },
+        {
+          q: "Як швидко ви відповідаєте?",
+          a: "Зазвичай — до 30 хвилин у робочий час.",
+        },
+        {
+          q: "Чи можна працювати без власного сервера?",
+          a: "Так. Саме для цього і потрібна хмара.\nВи позбавляєтесь витрат на обладнання, обслуговування та ризиків поломок.",
+        },
+        {
+          q: "Чи можна частково передати IT на аутсорс?",
+          a: "Так. Ми можемо:\n\n- взяти лише підтримку\n- або тільки сервери",
+        },
+        {
+          q: "Що входить у підтримку?",
+          a: "Залежить від формату, але зазвичай:\n\n- service desk для співробітників\n- адміністрування серверів\n- резервні копії\n- моніторинг\n- консультації",
+        },
+      ],
+      final: {
+        title: "Не знайшли відповідь на своє питання?",
+        text: "Напишіть нам у Telegram — відповімо швидко та по суті.",
+        button: "Отримати консультацію",
+      },
+    },
     // Clients Section
     clients: {
       badge: "Наші клієнти",
@@ -175,6 +238,7 @@ export const translations = {
       benefits: "Преимущества",
       process: "Как мы работаем",
       contacts: "Контакты",
+      faq: "FAQ",
       telegram: "Telegram",
     },
     // Hero Section
@@ -252,7 +316,7 @@ export const translations = {
     // Process Section
     process: {
       badge: "Процесс работы",
-      title: "Seamless Onboarding",
+      title: "Быстрый запуск",
       subtitle: "Прозрачный и быстрый процесс от первого контакта до постоянной поддержки",
       step1: {
         title: "Заявка в Telegram",
@@ -325,6 +389,68 @@ export const translations = {
         accounting: "1С в облаке",
       },
     },
+    solutionsFit: {
+      title: "Наши решения подходят, если:",
+      items: [
+        "у вас 5–100 сотрудников и нет своего IT-отдела",
+        "вы работаете с 1С / BAS и хотите стабильную работу",
+        "команда работает удаленно или гибридно",
+        "ИТ часто “падает” или работает нестабильно",
+        "хотите снизить расходы на серверы и поддержку",
+        "бизнес растет, а инфраструктура не успевает",
+        "нужен контроль, безопасность и резервные копии",
+      ],
+    },
+    faq: {
+      title: "Вопросы и ответы",
+      items: [
+        {
+          q: "Сколько стоят ваши услуги?",
+          a: "Стоимость зависит от количества пользователей, серверов и задач.\nМы не продаем “пакеты”, а подбираем решение под бизнес.\n\n👉 Напишите нам в Telegram — подготовим индивидуальный расчет.",
+        },
+        {
+          q: "Будет ли остановка работы при миграции в облако?",
+          a: "В большинстве случаев — нет.\nМиграцию планируем так, чтобы бизнес продолжал работать.\n\nКритические этапы выполняем в нерабочее время.",
+        },
+        {
+          q: "Сколько времени занимает запуск?",
+          a: "В среднем — от 3 до 5 дней.\nСрок зависит от сложности инфраструктуры и объема данных.",
+        },
+        {
+          q: "Безопасно ли переносить данные в облако?",
+          a: "Да. Мы настраиваем:\n\n- шифрование данных\n- контроль доступов\n- резервное копирование\n\nВаши данные защищены лучше, чем на локальном сервере.",
+        },
+        {
+          q: "Где физически хранятся данные?",
+          a: "Зависит от выбранного решения (Европа).\nПодбираем вариант под требования бизнеса и законодательства.",
+        },
+        {
+          q: "Что делать, если что-то “сломается”?",
+          a: "Вы просто пишете нам — и мы оперативно решаем проблему.\n\nТакже:\n\n- работает мониторинг\n- многие проблемы решаются еще до того, как вы их заметите",
+        },
+        {
+          q: "Как быстро вы отвечаете?",
+          a: "Обычно — до 30 минут в рабочее время.",
+        },
+        {
+          q: "Можно ли работать без собственного сервера?",
+          a: "Да. Именно для этого и нужна облачная инфраструктура.\nВы избавляетесь от затрат на оборудование, обслуживание и рисков поломок.",
+        },
+        {
+          q: "Можно ли частично передать IT на аутсорс?",
+          a: "Да. Мы можем:\n\n- взять только поддержку\n- или только серверы",
+        },
+        {
+          q: "Что входит в поддержку?",
+          a: "Зависит от формата, но обычно:\n\n- service desk для сотрудников\n- администрирование серверов\n- резервные копии\n- мониторинг\n- консультации",
+        },
+      ],
+      final: {
+        title: "Не нашли ответ на свой вопрос?",
+        text: "Напишите нам в Telegram — ответим быстро и по сути.",
+        button: "Получить консультацию",
+      },
+    },
     // Clients Section
     clients: {
       badge: "Наші клієнти",
@@ -341,6 +467,7 @@ export const translations = {
       benefits: "Benefits",
       process: "How We Work",
       contacts: "Contacts",
+      faq: "FAQ",
       telegram: "Telegram",
     },
     // Hero Section
@@ -417,7 +544,7 @@ export const translations = {
     // Process Section
     process: {
       badge: "Work Process",
-      title: "Seamless Onboarding",
+      title: "Fast Launch",
       subtitle: "Transparent and fast process from first contact to ongoing support",
       step1: {
         title: "Request via Telegram",
@@ -488,6 +615,68 @@ export const translations = {
         network: "Network Infrastructure",
         support: "Remote Support",
         accounting: "1C in Cloud",
+      },
+    },
+    solutionsFit: {
+      title: "Our solutions are a good fit if:",
+      items: [
+        "you have 5–100 employees and no in-house IT team",
+        "you use 1C / BAS and need stable operation",
+        "your team works remotely or in a hybrid format",
+        "IT often “goes down” or is unstable",
+        "you want to reduce server and support costs",
+        "your business is growing and infrastructure can’t keep up",
+        "you need control, security, and backups",
+      ],
+    },
+    faq: {
+      title: "Questions & Answers",
+      items: [
+        {
+          q: "How much do your services cost?",
+          a: "Pricing depends on the number of users, servers, and tasks.\nWe don’t sell “packages” — we tailor the solution to your business.\n\n👉 Message us on Telegram — we’ll prepare an individual estimate.",
+        },
+        {
+          q: "Will there be downtime during cloud migration?",
+          a: "In most cases — no.\nWe plan the migration so your business can keep working.\n\nCritical steps are done outside business hours.",
+        },
+        {
+          q: "How long does onboarding take?",
+          a: "On average — 3 to 5 days.\nThe timeline depends on infrastructure complexity and data volume.",
+        },
+        {
+          q: "Is it safe to move data to the cloud?",
+          a: "Yes. We set up:\n\n- data encryption\n- access control\n- backups\n\nYour data is protected better than on a local server.",
+        },
+        {
+          q: "Where is the data physically stored?",
+          a: "It depends on the chosen solution (Europe).\nWe select an option that matches your business and legal requirements.",
+        },
+        {
+          q: "What if something breaks?",
+          a: "You just message us — and we fix it quickly.\n\nAlso:\n\n- monitoring is running\n- many issues are solved before you even notice them",
+        },
+        {
+          q: "How fast do you respond?",
+          a: "Usually — within 30 minutes during business hours.",
+        },
+        {
+          q: "Can we work without our own server?",
+          a: "Yes — that’s exactly what the cloud is for.\nYou avoid hardware costs, maintenance, and failure risks.",
+        },
+        {
+          q: "Can we outsource IT partially?",
+          a: "Yes. We can:\n\n- take only support\n- or only servers",
+        },
+        {
+          q: "What’s included in support?",
+          a: "It depends on the format, but typically:\n\n- service desk for employees\n- server administration\n- backups\n- monitoring\n- consultations",
+        },
+      ],
+      final: {
+        title: "Didn’t find an answer to your question?",
+        text: "Message us on Telegram — we’ll reply quickly and to the point.",
+        button: "Get consultation",
       },
     },
     // Clients Section

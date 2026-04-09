@@ -1,4 +1,4 @@
-import { MapPin, Clock, Send, Cloud } from "lucide-react";
+import { MapPin, Clock, Send, Cloud, Phone, Mail } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import { TELEGRAM_LINK } from "@/config/links";
@@ -40,6 +40,11 @@ export function Footer() {
                   icon: Send,
                   href: TELEGRAM_LINK,
                   color: "from-[#229ED9] to-[#1a8dc4]",
+                },
+                {
+                  icon: Mail,
+                  href: "mailto:it@dti.com.ua",
+                  color: "from-purple-500 to-cyan-500",
                 },
               ].map((social, idx) => {
                 const Icon = social.icon;
@@ -126,6 +131,30 @@ export function Footer() {
                 <div>
                   <div className="text-white font-medium">{t.schedule}</div>
                   <div className="text-cyan-400 text-xs font-semibold">{t.support}</div>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 text-sm">
+                <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <a
+                    href="tel:+380966517884"
+                    className="text-white font-medium hover:text-cyan-300 transition-colors"
+                  >
+                    0966517884
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 text-sm">
+                <Mail className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <a
+                    href="mailto:it@dti.com.ua"
+                    className="text-white font-medium hover:text-cyan-300 transition-colors"
+                  >
+                    it@dti.com.ua
+                  </a>
                 </div>
               </div>
 
