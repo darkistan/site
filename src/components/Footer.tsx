@@ -1,6 +1,7 @@
 import { MapPin, Clock, Send, Cloud, Phone, Mail } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
+import { CONTACT_MAILTO, CONTACT_EMAIL, CONTACT_PHONES } from "@/config/contacts";
 import { TELEGRAM_LINK } from "@/config/links";
 
 export function Footer() {
@@ -43,7 +44,7 @@ export function Footer() {
                 },
                 {
                   icon: Mail,
-                  href: "mailto:it@dti.com.ua",
+                  href: CONTACT_MAILTO,
                   color: "from-purple-500 to-cyan-500",
                 },
               ].map((social, idx) => {
@@ -136,13 +137,16 @@ export function Footer() {
 
               <div className="flex items-start gap-3 text-sm">
                 <Phone className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
-                <div>
-                  <a
-                    href="tel:+380966517884"
-                    className="text-white font-medium hover:text-cyan-300 transition-colors"
-                  >
-                    0966517884
-                  </a>
+                <div className="flex flex-col gap-1">
+                  {CONTACT_PHONES.map(({ display, tel }) => (
+                    <a
+                      key={tel}
+                      href={`tel:${tel}`}
+                      className="text-white font-medium hover:text-cyan-300 transition-colors"
+                    >
+                      {display}
+                    </a>
+                  ))}
                 </div>
               </div>
 
@@ -150,10 +154,10 @@ export function Footer() {
                 <Mail className="w-5 h-5 text-purple-400 flex-shrink-0 mt-0.5" />
                 <div>
                   <a
-                    href="mailto:it@dti.com.ua"
+                    href={CONTACT_MAILTO}
                     className="text-white font-medium hover:text-cyan-300 transition-colors"
                   >
-                    it@dti.com.ua
+                    {CONTACT_EMAIL}
                   </a>
                 </div>
               </div>

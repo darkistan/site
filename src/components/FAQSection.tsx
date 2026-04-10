@@ -12,7 +12,10 @@ export function FAQSection() {
   const sectionId = useId();
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const items = useMemo(() => t.items as FaqItem[], [t.items]);
+  const items = useMemo(
+    () => t.items.map((item) => ({ q: item.q, a: item.a })),
+    [t.items],
+  );
 
   return (
     <section id="faq" className="py-24 bg-[#0a0a0f] relative overflow-hidden">

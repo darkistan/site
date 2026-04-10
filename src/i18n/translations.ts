@@ -120,6 +120,7 @@ export const translations = {
         "Надішліть нам повідомлення в Telegram, щоб отримати індивідуальний план вартості для вашого бізнесу. Безкоштовна консультація та аудит інфраструктури включені.",
       button: "Отримати розрахунок у Telegram",
       email: "Або напишіть email",
+      contactsHint: "Також можна зателефонувати або написати на пошту:",
       trust1: {
         title: "Безпека та конфіденційність",
         description: "Шифрування даних",
@@ -349,6 +350,7 @@ export const translations = {
         "Отправьте нам сообщение в Telegram, чтобы получить индивидуальный план стоимости для вашего бизнеса. Бесплатная консультация и аудит инфраструктуры включены.",
       button: "Получить расчет в Telegram",
       email: "Или напишите email",
+      contactsHint: "Также можно позвонить или написать на почту:",
       trust1: {
         title: "Безопасность и конфиденциальность",
         description: "Шифрование данных",
@@ -453,11 +455,11 @@ export const translations = {
     },
     // Clients Section
     clients: {
-      badge: "Наші клієнти",
-      title: "Нам довіряють",
-      subtitle: "Провідні компанії України обрали наші ІТ-рішення",
-      companies: "компаній",
-      trustUs: "довіряють нам",
+      badge: "Наши клиенты",
+      title: "Нам доверяют",
+      subtitle: "Ведущие компании Украины выбрали наши ИТ-решения",
+      companies: "компаний",
+      trustUs: "доверяют нам",
     },
   },
   EN: {
@@ -577,6 +579,7 @@ export const translations = {
         "Send us a message on Telegram to get a custom pricing plan for your business. Free consultation and infrastructure audit included.",
       button: "Get Quote in Telegram",
       email: "Or write an email",
+      contactsHint: "You can also call or email us:",
       trust1: {
         title: "Security & Privacy",
         description: "Data encryption",

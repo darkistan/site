@@ -1,4 +1,5 @@
-import { Send, ArrowRight, Sparkles, Zap, Lock } from "lucide-react";
+import { Send, ArrowRight, Sparkles, Zap, Lock, Phone, Mail } from "lucide-react";
+import { CONTACT_EMAIL, CONTACT_MAILTO, CONTACT_PHONES } from "@/config/contacts";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import { TELEGRAM_LINK } from "@/config/links";
@@ -47,19 +48,43 @@ export function CTASection() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          {/* Primary CTA */}
-          <a
-            href={TELEGRAM_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] hover:from-[#1a8dc4] hover:to-[#229ED9] text-white px-10 py-5 rounded-2xl transition-all duration-300 font-bold text-lg shadow-2xl shadow-[#229ED9]/30 hover:shadow-[#229ED9]/60 hover:scale-105"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-            <Send className="w-6 h-6 relative z-10" />
-            <span className="relative z-10">{t.button}</span>
-            <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
-          </a>
+        <div className="flex flex-col items-center gap-6 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href={TELEGRAM_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] hover:from-[#1a8dc4] hover:to-[#229ED9] text-white px-10 py-5 rounded-2xl transition-all duration-300 font-bold text-lg shadow-2xl shadow-[#229ED9]/30 hover:shadow-[#229ED9]/60 hover:scale-105"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
+              <Send className="w-6 h-6 relative z-10" />
+              <span className="relative z-10">{t.button}</span>
+              <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
+
+          <div className="w-full max-w-xl mx-auto text-center">
+            <p className="text-sm text-gray-400 mb-3">{t.contactsHint}</p>
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6">
+              {CONTACT_PHONES.map(({ display, tel }) => (
+                <a
+                  key={tel}
+                  href={`tel:${tel}`}
+                  className="inline-flex items-center gap-2 text-gray-200 hover:text-cyan-300 transition-colors text-base font-medium"
+                >
+                  <Phone className="w-4 h-4 text-cyan-400 shrink-0" aria-hidden />
+                  {display}
+                </a>
+              ))}
+              <a
+                href={CONTACT_MAILTO}
+                className="inline-flex items-center gap-2 text-gray-200 hover:text-cyan-300 transition-colors text-base font-medium break-all"
+              >
+                <Mail className="w-4 h-4 text-purple-400 shrink-0" aria-hidden />
+                {CONTACT_EMAIL}
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* Trust Indicators */}
