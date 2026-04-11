@@ -2,6 +2,7 @@ import { Send, Search, CloudUpload, Headphones, Check } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import { TELEGRAM_LINK } from "@/config/links";
+import { TelegramStepsHint } from "@/components/TelegramStepsHint";
 
 export function ProcessSection() {
   const { language } = useLanguage();
@@ -189,15 +190,18 @@ export function ProcessSection() {
                 </div>
               </div>
 
-              <a
-                href={TELEGRAM_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 shadow-lg hover:shadow-cyan-500/50 whitespace-nowrap"
-              >
-                <Send className="w-5 h-5" />
-                <span>{t.startNow}</span>
-              </a>
+              <div className="flex flex-col items-end sm:items-center gap-2">
+                <a
+                  href={TELEGRAM_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-400 hover:to-purple-400 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200 shadow-lg hover:shadow-cyan-500/50 whitespace-nowrap"
+                >
+                  <Send className="w-5 h-5" />
+                  <span>{t.startNow}</span>
+                </a>
+                <TelegramStepsHint className="text-right sm:text-center max-w-xs" />
+              </div>
             </div>
           </div>
         </div>

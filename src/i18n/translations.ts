@@ -11,6 +11,9 @@ export const translations = {
       faq: "FAQ",
       telegram: "Telegram",
     },
+    /** Підказка під кнопками відкриття бота в Telegram */
+    telegramStepsHint:
+      "Після переходу в Telegram натисніть «Розпочати», потім — «Заявка на консультацію».",
     // Hero Section
     hero: {
       badge: "Надійна ІТ-підтримка",
@@ -242,6 +245,8 @@ export const translations = {
       faq: "FAQ",
       telegram: "Telegram",
     },
+    telegramStepsHint:
+      "После перехода в Telegram нажмите «Старт», затем — «Заявка на консультацию».",
     // Hero Section
     hero: {
       badge: "Надежная ИТ-поддержка",
@@ -472,6 +477,8 @@ export const translations = {
       faq: "FAQ",
       telegram: "Telegram",
     },
+    telegramStepsHint:
+      "In Telegram, tap Start, then Request a consultation.",
     // Hero Section
     hero: {
       badge: "Reliable IT support",

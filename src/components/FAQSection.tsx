@@ -1,6 +1,7 @@
 import { ChevronDown, HelpCircle, Send } from "lucide-react";
 import { useId, useMemo, useState } from "react";
 import { TELEGRAM_LINK } from "@/config/links";
+import { TelegramStepsHint } from "@/components/TelegramStepsHint";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 
@@ -82,15 +83,18 @@ export function FAQSection() {
         <div className="mt-12 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-center">
           <h3 className="text-2xl font-bold text-white mb-2">{t.final.title}</h3>
           <p className="text-gray-300 mb-6">{t.final.text}</p>
-          <a
-            href={TELEGRAM_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] hover:from-[#1a8dc4] hover:to-[#229ED9] text-white px-8 py-4 rounded-2xl transition-all duration-300 font-bold shadow-2xl shadow-[#229ED9]/30 hover:shadow-[#229ED9]/60 hover:scale-[1.02]"
-          >
-            <Send className="w-5 h-5" />
-            <span>{t.final.button}</span>
-          </a>
+          <div className="flex flex-col items-center gap-2">
+            <a
+              href={TELEGRAM_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] hover:from-[#1a8dc4] hover:to-[#229ED9] text-white px-8 py-4 rounded-2xl transition-all duration-300 font-bold shadow-2xl shadow-[#229ED9]/30 hover:shadow-[#229ED9]/60 hover:scale-[1.02]"
+            >
+              <Send className="w-5 h-5" />
+              <span>{t.final.button}</span>
+            </a>
+            <TelegramStepsHint className="text-center max-w-md px-2" />
+          </div>
         </div>
       </div>
     </section>

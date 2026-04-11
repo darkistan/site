@@ -176,10 +176,13 @@ export function Footer() {
             </div>
 
             <div className="flex items-center gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a
+                href="/privacy.html"
+                className="text-gray-400 hover:text-cyan-400 transition-colors"
+              >
                 {t.privacy}
               </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors">
+              <a href="/terms.html" className="text-gray-400 hover:text-cyan-400 transition-colors">
                 {t.terms}
               </a>
             </div>

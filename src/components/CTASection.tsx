@@ -3,6 +3,7 @@ import { CONTACT_EMAIL, CONTACT_MAILTO, CONTACT_PHONES } from "@/config/contacts
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import { TELEGRAM_LINK } from "@/config/links";
+import { TelegramStepsHint } from "@/components/TelegramStepsHint";
 
 export function CTASection() {
   const { language } = useLanguage();
@@ -50,17 +51,20 @@ export function CTASection() {
         {/* CTA Buttons */}
         <div className="flex flex-col items-center gap-6 mb-16">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href={TELEGRAM_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] hover:from-[#1a8dc4] hover:to-[#229ED9] text-white px-10 py-5 rounded-2xl transition-all duration-300 font-bold text-lg shadow-2xl shadow-[#229ED9]/30 hover:shadow-[#229ED9]/60 hover:scale-105"
-            >
-              <div className="absolute inset-0 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
-              <Send className="w-6 h-6 relative z-10" />
-              <span className="relative z-10">{t.button}</span>
-              <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
-            </a>
+            <div className="flex flex-col items-center gap-2">
+              <a
+                href={TELEGRAM_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] hover:from-[#1a8dc4] hover:to-[#229ED9] text-white px-10 py-5 rounded-2xl transition-all duration-300 font-bold text-lg shadow-2xl shadow-[#229ED9]/30 hover:shadow-[#229ED9]/60 hover:scale-105"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-[#229ED9] to-[#1a8dc4] rounded-2xl blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
+                <Send className="w-6 h-6 relative z-10" />
+                <span className="relative z-10">{t.button}</span>
+                <ArrowRight className="w-5 h-5 relative z-10 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <TelegramStepsHint className="text-center max-w-md px-2" />
+            </div>
           </div>
 
           <div className="w-full max-w-xl mx-auto text-center">

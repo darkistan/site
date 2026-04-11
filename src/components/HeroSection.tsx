@@ -2,6 +2,7 @@ import { Send, Sparkles } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/i18n/translations";
 import { TELEGRAM_LINK } from "@/config/links";
+import { TelegramStepsHint } from "@/components/TelegramStepsHint";
 
 export function HeroSection() {
   const { language } = useLanguage();
@@ -44,7 +45,7 @@ export function HeroSection() {
           </p>
 
           {/* CTA Button */}
-          <div className="pt-6">
+          <div className="pt-6 flex flex-col items-center gap-2">
             <a
               href={TELEGRAM_LINK}
               target="_blank"
@@ -55,6 +56,7 @@ export function HeroSection() {
               <Send className="w-6 h-6 relative z-10" />
               <span className="relative z-10">{t.cta}</span>
             </a>
+            <TelegramStepsHint className="text-center max-w-md px-2" />
           </div>
 
           {/* Stats Cards */}

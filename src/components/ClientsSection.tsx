@@ -65,6 +65,8 @@ export function ClientsSection() {
                   <img
                     src={client.logo}
                     alt={client.name}
+                    loading="lazy"
+                    decoding="async"
                     className="relative z-10 w-auto h-auto max-h-20 sm:max-h-24 max-w-[180px] sm:max-w-[220px] object-contain transition-all duration-300 group-hover:scale-110"
                     style={{ filter: "drop-shadow(0 2px 8px rgba(0,0,0,0.1))" }}
                   />
