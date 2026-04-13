@@ -20,7 +20,7 @@ if (/<lastmod>[\s\S]*?<\/lastmod>/.test(xml)) {
   xml = xml.replace(/<lastmod>[\s\S]*?<\/lastmod>/, `<lastmod>${lastmod}</lastmod>`);
 } else {
   xml = xml.replace(
-    /(<loc>https:\/\/clouds\.ua\/<\/loc>)/,
+    /(<loc>https:\/\/cloud-pro\.com\.ua\/<\/loc>)/,
     `$1\n    <lastmod>${lastmod}</lastmod>`,
   );
 }

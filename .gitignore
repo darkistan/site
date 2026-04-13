@@ -4,6 +4,9 @@ node_modules/
 # Збірка
 dist/
 
+# Локальна копія для деплою (hosting-ukraine-export/copy-dist.bat)
+hosting-ukraine-export/site-export/
+
 # Логи локального сервера
 logs/
 

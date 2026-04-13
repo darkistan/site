@@ -2,7 +2,7 @@
  * Контактні телефони та email — єдине джерело для Footer, CTA тощо.
  */
 
-export const CONTACT_EMAIL = "it@clouds.ua";
+export const CONTACT_EMAIL = "it@cloud-pro.com.ua";
 
 export const CONTACT_MAILTO = `mailto:${CONTACT_EMAIL}`;
 

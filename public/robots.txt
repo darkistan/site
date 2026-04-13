@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://clouds.ua/sitemap.xml
+Sitemap: https://cloud-pro.com.ua/sitemap.xml
