@@ -1,0 +1,17 @@
+<?php
+/**
+ * Приклад секретного файлу для Telegram.
+ *
+ * На хостингу створіть файл (НЕ в public_html/www):
+ *   /home/jj537913/cloud-pro.com.ua/.secrets/telegram.php
+ *
+ * Скопіюйте цей файл як `telegram.php` і підставте реальні значення.
+ * Файл не має бути доступний з інтернету (тому він поза `www/`).
+ */
+return [
+    // Токен бота від BotFather
+    'TELEGRAM_TOKEN' => 'PASTE_BOT_TOKEN_HERE',
+
+    // Один або кілька chat_id через кому
+    'TELEGRAM_CHAT_IDS' => '440127888',
+];
